@@ -14,23 +14,23 @@ Interface simples e responsiva.
 Como Rodar o Projeto
 Clone o repositório:
 
-bash
+
 Copiar código
 git clone <URL_DO_REPOSITORIO>
 Navegue até a pasta do projeto:
 
-bash
+
 Copiar código
 cd <PASTA_DO_PROJETO>
 Crie um ambiente virtual e ative-o:
 
-bash
+
 Copiar código
 python -m venv venv
 source venv/bin/activate  # No Windows: venv\Scripts\activate
 Instale as dependências:
 
-bash
+
 Copiar código
 pip install -r requirements.txt
 Rode as migrações do banco de dados:
@@ -40,7 +40,7 @@ Copiar código
 python manage.py migrate
 Inicie o servidor de desenvolvimento:
 
-bash
+
 Copiar código
 python manage.py runserver
 Acesse o projeto em: http://127.0.0.1:8000/
