@@ -79,5 +79,21 @@
     
 </div>
 
-
 {% endblock %}
+
+<script>
+    const input = document.getElementById('data'); 
+    const link = document.getElementById('link');
+  
+    input.addEventListener('input', () => {
+      const data = input.value;
+      link.setAttribute('href', `/diario/dia?data=${data}`); 
+    });
+  
+    link.addEventListener('click', (e) => {
+      if (!input.value) {
+        e.preventDefault();
+        alert('Por favor, selecione uma data antes de continuar.');
+      }
+    });
+  </script>
